@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  color: #222;
+}
+
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin-top: -30px;
+}
+
+#url-input {
+  height: 35px;
+  border: 1px solid #3385ff;
+  padding: 3px 10px;
+  width: 350px;
+  outline: none;
+}
+
+.button {
+  display: inline-block;
+  background: #3385ff;
+  border: 0;
+  width: 60px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #317ef3;
+}
+
+.download {
+  font-size: 12px;
+}
+
+#result  {
+  display: none;
+  color: #1a0dab;
+}
+
+.footer {
+  margin: 30 0;
+  position: absolute;
+  bottom: 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #999;
+}
+
+/* Lodaing styles */
+.spinner {
+  position: absolute;
+  display: none;
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #3385ff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
