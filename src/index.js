@@ -18,7 +18,6 @@ app.use(bodyParser())
 // Static server
 app.use(serve(path.join(__dirname, '../src/static')))
 app.use(serve(path.join(__dirname, '../public')))
-app.use(serve(path.join(__dirname, '../created-images')))
 
 // routes
 require('./routes')(app, router)
