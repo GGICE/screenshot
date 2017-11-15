@@ -59,7 +59,7 @@ async function create(ctx) {
 
     // Do screnshot
     await page.screenshot({
-      path: `${path.resolve('./public/created-images/')}/${name}.png`,
+      path: `${path.resolve('./created-images/')}/${name}.png`,
       fullPage: !body.height && !body.width,
     })
 

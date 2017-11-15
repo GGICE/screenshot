@@ -4,4 +4,4 @@
 .idea
 dist
 node_modules
-public/created-images/
+created-images/
